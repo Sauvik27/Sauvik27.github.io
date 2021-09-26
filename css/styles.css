@@ -1,0 +1,108 @@
+body{
+  background: url(../images/wallpapers/wall2.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/************************TOP-BAR********************************/
+.topbar{
+  height: 2.3rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+.topbar:before{
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(0,0,0, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
+.material-icons{
+  font-size: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 0.5rem;
+}
+.fa-apple{
+  position:absolute;
+  bottom:1.5rem;
+}
+.topbarStatusIcon{
+  position:relative;
+  bottom:0.5rem;
+}
+.topbarStatusIcon:hover{
+  background: radial-gradient(rgba(120,120,120,0.70),rgba(120,120,120,0));
+}
+.topbarDate{
+  position:relative;
+  bottom:0.5rem;
+}
+.topbarDate:hover{
+  background: radial-gradient(rgba(120,120,120,0.70),rgba(120,120,120,0));
+}
+
+
+
+/********************************DOCK***********************************/
+.dock{
+  align-items: center;
+  justify-content: space-between;
+  width: 35rem;
+  height: 6rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-radius: 20px;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  margin: auto;
+  position:absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0.3rem;
+ }
+.dock:before{
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(0,0,0, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+.dockIcons{
+  margin:auto;
+  padding: 0 5px;
+  height: 4.5rem;
+  width: 4.5rem;
+  transition: transform .25s;
+  border: 0;
+}
+.dockIcons:hover{
+  transform: scale(1.4);
+}
+.row{
+  margin: 0.75rem 0;
+}
+img{
+  height: 4.5rem;
+  width: 4.5rem;
+}
