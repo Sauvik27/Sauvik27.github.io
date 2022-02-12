@@ -1,5 +1,5 @@
 body{
-  background: url(../images/wallpapers/wall2.jpg) no-repeat;
+  background: url(../images/wallpapers/wall2.webp);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -8,8 +8,8 @@ body{
 .topbar{
   height: 2.3rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: relative;
   z-index: 1;
   background: inherit;
@@ -30,38 +30,40 @@ body{
   margin: -20px;
 }
 .material-icons{
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: auto;
   margin-bottom: auto;
   padding: 0 0.5rem;
 }
-.fa-apple{
+.profileIcon{
   position:absolute;
-  bottom:1.5rem;
+  bottom:1.28rem;
+  font-size: 1.5rem;
 }
-.topbarStatusIcon{
+#topbarStatusIcon{
   position:relative;
   bottom:0.5rem;
+  border-radius: 10px;
 }
-.topbarStatusIcon:hover{
-  background: radial-gradient(rgba(120,120,120,0.70),rgba(120,120,120,0));
+#topbarStatusIcon:hover{
+  background-color: rgba(97, 97, 97, 0.363);
 }
-.topbarDate{
+#topbarDate{
   position:relative;
   bottom:0.5rem;
+  border-radius: 10px;
 }
-.topbarDate:hover{
-  background: radial-gradient(rgba(120,120,120,0.70),rgba(120,120,120,0));
+#topbarDate:hover{
+  background-color: rgba(97, 97, 97, 0.363);
+
 }
 
 
 
 /********************************DOCK***********************************/
 .dock{
-  align-items: center;
-  justify-content: space-between;
-  width: 35rem;
-  height: 6rem;
+  width: 30rem;
+  height: 5rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
   border-radius: 20px;
   z-index: 1;
@@ -88,21 +90,190 @@ body{
   margin: -20px;
 }
 
-.dockIcons{
-  margin:auto;
-  padding: 0 5px;
-  height: 4.5rem;
-  width: 4.5rem;
-  transition: transform .25s;
+.dockIconsImage{
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-top: 0.75rem;
+  transition: transform .30s;
   border: 0;
 }
-.dockIcons:hover{
-  transform: scale(1.4);
-}
-.row{
-  margin: 0.75rem 0;
+.dockIconsImage:hover{
+  transform: scale(1.3);
 }
 img{
   height: 4.5rem;
   width: 4.5rem;
+}
+
+.blurModal{
+  background: rgba(10, 10, 10, 0.692);
+  backdrop-filter: blur( 10px );
+  /* -webkit-backdrop-filter: blur( 10px ); */
+  border-radius: 15px;
+  border: 0px;
+}
+.modal-backdrop{
+  background-color: #00000000;
+}
+.clockModal{
+  width: 15rem;
+  height: 15rem;
+  left:33rem;
+  top: 1rem;
+  position: relative;
+  margin: auto;
+}
+iframe{
+  border-bottom-left-radius: 15px;
+}
+.statusIconModal{
+  left:24rem;
+  top: 1rem;
+}
+.statusButton{
+  border-radius: 10px;
+}
+.modal-footer {
+  border-top: 0 none;
+}
+.modal-header{
+  border-bottom: 0 none;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 16px;
+  height: 15px;
+}
+.list-group-item{
+  background: rgba(12, 12, 12, 0);
+  border: 0px;
+}
+.modal{
+  overflow: hidden;
+}
+
+.weatherStatus{
+  width: 15.5rem;
+  height: 14rem;
+  background: rgba(12, 12, 12, 0.459);
+  margin-left: 0.6rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.profileModal{
+  width: 20rem;
+  right: 30rem;
+  top: 1rem;
+  position: relative;
+  margin: auto;
+}
+.profileCard{
+  background: rgba(0, 0, 0, 0);
+  border: 0px;
+}
+
+
+
+/* apps css */
+.musicModal{
+  background: rgba(14, 14, 14, 0.842);
+  /* backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px ); */
+  border-radius: 15px;
+  border: 0px;
+}
+.music-modal-body{
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+.weatherModal{
+  background: rgba(14, 14, 14, 0.85);
+  backdrop-filter: blur( 10px );
+  border-radius: 15px;
+  border: 0px;
+}
+.linkedInModal{
+  background: rgba(20, 20, 20, 0.884);
+  border-radius: 15px;
+  border: 0px;
+  max-height: 30rem;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+.linkedInModal::-webkit-scrollbar {
+  display: none;
+}
+
+.wallpaper{
+  height: 8rem;
+  transition: transform .35s;
+}
+.wallpaper:hover{
+  transform: scale(1.05);
+}
+.settingsModal{
+  background: rgba(14, 14, 14, 0.836);
+  border-radius: 15px;
+  border: 0px;
+  width: 26rem;
+}
+.linkedinBtn{
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+}
+.linkedinBtn:focus,.linkedinBtn:hover {
+  color: White;
+  text-decoration: none;
+}
+.google:hover{
+  text-decoration: none;
+  color: initial;
+}
+.browserModal{
+  width: auto;
+  height: 30rem;
+}
+.searchBox{
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgba(12, 12, 12, 0.404);
+  border-radius: 20px;
+  font-size: 1.3rem;
+  transition: transform .30s;
+  border: 0px;
+}
+.searchBox:hover{
+  text-decoration: none;
+}
+
+#google{
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.typewriter h3 {
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  margin-top: 45%;
+  text-align: center;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
