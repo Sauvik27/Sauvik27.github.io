@@ -2,6 +2,7 @@ body{
   background: url(../images/wallpapers/wall2.webp);
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 /************************TOP-BAR********************************/
@@ -118,7 +119,7 @@ img{
 .clockModal{
   width: 15rem;
   height: 15rem;
-  left:33rem;
+  left: 36vw;
   top: 1rem;
   position: relative;
   margin: auto;
@@ -127,7 +128,7 @@ iframe{
   border-bottom-left-radius: 15px;
 }
 .statusIconModal{
-  left:24rem;
+  left:27vw;
   top: 1rem;
 }
 .statusButton{
@@ -162,7 +163,7 @@ iframe{
 
 .profileModal{
   width: 20rem;
-  right: 30rem;
+  right: 34.5vw;
   top: 1rem;
   position: relative;
   margin: auto;

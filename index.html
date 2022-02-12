@@ -74,7 +74,7 @@
 <!-- modal -->
 
 <!-- clock -->
-  <div class="modal fade ml-auto" id="clockModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade ml-auto" id="clockModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
     <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content blurModal clockModal">
         <div class="modal-body">
@@ -87,7 +87,7 @@
 <!-- clock -->
 <!-- statusIcons -->
 <section>
-  <div class="modal fade" id="statusIconModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade" id="statusIconModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
     <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content blurModal statusIconModal">
         <div class="modal-footer">
@@ -106,7 +106,7 @@
 </section>
 <!-- statusIcons -->
 <!-- Profile -->
-<div class="modal fade mr-auto" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade mr-auto" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content blurModal profileModal">
       <div class="modal-body">
@@ -123,7 +123,7 @@
 </div>
 <!-- Profile -->
 <!-- music -->
-<div class="modal fade mr-auto" id="musicModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade mr-auto" id="musicModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
   <div class="modal-dialog modal-dialog-centered modal-md" role="document">
     <div class="modal-content musicModal">
       <div class="modal-header text-light">
@@ -140,7 +140,7 @@
 </div>
 <!-- music -->
 <!-- calculator -->
-<div class="modal fade mr-auto" id="calculatorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade mr-auto" id="calculatorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
   <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
     <div class="modal-content musicModal">
       <div class="modal-header text-light">
@@ -184,7 +184,7 @@
 </div>
 <!-- calculator -->
 <!-- Weather -->
-<div class="modal fade mr-auto" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade mr-auto" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
   <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
     <div class="modal-content weatherModal">
       <div class="modal-header text-light">
@@ -201,7 +201,7 @@
 </div>
 <!-- weather -->
 <!-- Linkedin -->
-<div class="modal fade mr-auto" id="linkedinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade mr-auto" id="linkedinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
   <div class="modal-dialog modal-dialog-centered modal-md" role="document">
     <div class="modal-content linkedInModal">
       <div class="modal-body align-items-center">
@@ -215,7 +215,7 @@
 </div>
 <!-- Linkedin -->
 <!-- Settings -->
-<div class="modal fade mr-auto" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade mr-auto" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
   <div class="modal-dialog modal-dialog-centered modal-md" role="document">
     <div class="modal-content settingsModal">
       <div class="modal-header text-light">
@@ -241,7 +241,7 @@
 </div>
 <!-- Settings -->
 <!-- Browser -->
-<div class="modal fade mr-auto" id="browserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade mr-auto" id="browserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;">
   <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
     <div class="modal-content musicModal">
       <div class="modal-header text-light">
@@ -278,9 +278,12 @@
     $('.modal-content').resizable({
       //alsoResize: ".modal-dialog",
       minHeight: 300,
-      minWidth: 300
+      minWidth: 300,
     });
-    $('.modal-dialog').draggable();
+    $('.modal-dialog').draggable({
+      // containment: "body",
+      // scroll: false
+    });
 
     $('#myModal').on('show.bs.modal', function() {
       $(this).find('.modal-body').css({
