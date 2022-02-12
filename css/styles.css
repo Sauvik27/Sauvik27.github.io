@@ -189,8 +189,8 @@ iframe{
   padding-bottom: 0px;
 }
 .weatherModal{
-  background: rgba(14, 14, 14, 0.85);
-  backdrop-filter: blur( 10px );
+  background: rgba(14, 14, 14, 0.877);
+  /* backdrop-filter: blur( 10px ); */
   border-radius: 15px;
   border: 0px;
 }
