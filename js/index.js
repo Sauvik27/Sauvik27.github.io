@@ -34,7 +34,7 @@ function dateTime(){
 function googleClick(){
     document.getElementById("google").innerHTML = "You want RECURSION :P";
     document.getElementById("bottomBrowser").innerHTML = "Connect with me on LINKEDIN app.";
-    document.getElementById("bottomBrowserLast").innerHTML = "You think wifi/volume icon works, and what about the date button, it works?";
+    document.getElementById("bottomBrowserLast").innerHTML = "";
 }
 
 $('body').keydown(function(e) {
