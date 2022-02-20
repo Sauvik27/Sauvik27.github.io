@@ -35,11 +35,20 @@ body{
   margin-top: auto;
   margin-bottom: auto;
   padding: 0 0.5rem;
+  transition: transform 0.6s;
+}
+.material-icons:hover{
+  transform: scale(1.2);
 }
 .profileIcon{
   position:absolute;
   bottom:1.28rem;
   font-size: 1.5rem;
+  transition: transform 0.8s;
+}
+.profileIcon:hover{
+  color: rgb(221, 221, 221);
+  transform: rotate(30deg);
 }
 #topbarStatusIcon{
   position:relative;
@@ -56,7 +65,12 @@ body{
 }
 #topbarDate:hover{
   background-color: rgba(97, 97, 97, 0.363);
-
+}
+.date-time{
+  transition: transform 1s;
+}
+.date-time:hover{
+  transform: scale(1.08);
 }
 
 
@@ -95,7 +109,7 @@ body{
   height: 3.5rem;
   width: 3.5rem;
   margin-top: 0.75rem;
-  transition: transform .30s;
+  transition: transform .40s;
   border: 0;
 }
 .dockIconsImage:hover{
@@ -208,7 +222,7 @@ iframe{
 
 .wallpaper{
   height: 8rem;
-  transition: transform .35s;
+  transition: transform .45s;
 }
 .wallpaper:hover{
   transform: scale(1.05);
@@ -224,13 +238,30 @@ iframe{
   padding: .5em;
   text-decoration: none;
 }
+.linkedinBtn:hover .linkedinIcon{
+  transform: scale(1.2);
+}
+.linkedinIcon{
+  transition: transform .60s;
+}
+
+.linkedinImage{
+  transition: transform 0.9s;
+}
+.linkedinImage:hover{
+  transform: scale(1.025);
+}
 .linkedinBtn:focus,.linkedinBtn:hover {
   color: White;
   text-decoration: none;
 }
+.google{
+  transition: transform 0.9s;
+}
 .google:hover{
   text-decoration: none;
   color: initial;
+  transform: scale(1.1);
 }
 .browserModal{
   width: auto;
@@ -242,13 +273,16 @@ iframe{
   background-color: rgba(12, 12, 12, 0.404);
   border-radius: 20px;
   font-size: 1.3rem;
-  transition: transform .30s;
+  transition: transform .60s;
   border: 0px;
 }
 .searchBox:hover{
   text-decoration: none;
+  transform: scale(1.02);
 }
-
+.searchInsideBox:hover .searchIcon{
+  transform: rotate(45deg);
+}
 #google{
   background-color: rgba(0, 0, 0, 0);
   border: 0px;
