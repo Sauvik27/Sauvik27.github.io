@@ -165,7 +165,12 @@ iframe{
 .modal{
   overflow: hidden;
 }
-
+.myProfile{
+  transition: transform 0.6s;
+}
+.myProfile:hover{
+  transform: scale(1.04);
+}
 .weatherStatus{
   width: 15.5rem;
   height: 13rem;

@@ -36,22 +36,7 @@ function googleClick(){
     document.getElementById("bottomBrowser").innerHTML = "Connect with me on LINKEDIN app.";
     document.getElementById("bottomBrowserLast").innerHTML = "You think wifi/volume icon works, and what about the date button, it works?";
 }
-// $(window).resize(function() {
-//     clockPosition();
-// });
 
-// function clockPosition(){
-//     const topbarDate = document.getElementById('topbarDate');
-//     const clockModal = document.getElementById('clockModal');
-
-//     const DateRect = topbarDate.getBoundingClientRect();
-//     const clockRect = clockModal.getBoundingClientRect();
-
-//     const top = DateRect.top + DateRect.height;
-//     const left = DateRect.left + DateRect.width / 2 - clockRect.width / 2;
-//     clockModal.style.top = `${top + 1}px`;
-//     clockModal.style.left = `${left}px`;
-// }
 $('body').keydown(function(e) {
     if(e.which==123){
         e.preventDefault();
